@@ -10,7 +10,7 @@ st.title("🐍 COBRA.AI - Sistema de Recuperação de Crédito")
 # A API KEY será configurada no servidor por segurança
 api_key = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel(model_name='models/gemini-1.5-flash')
 
 # 3. Interface de Dados (O que o usuário preenche)
 with st.sidebar:
